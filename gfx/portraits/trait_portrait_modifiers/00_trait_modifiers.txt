@@ -943,7 +943,7 @@ disfigured_vd = {
 					exists = root
 				}
 				root = {
-						has_character_modifier = masked_modifier
+					has_character_modifier = masked_modifier
 					NOR = {
 						portrait_fp3_iranian_clothing_trigger = yes
 						portrait_fp3_turkic_clothing_trigger = yes
@@ -1197,7 +1197,7 @@ disfigured_vd = {
 				}
 				root = {
 					has_character_modifier = masked_modifier
-					OR = {
+					NOR = {
 						portrait_fp3_iranian_clothing_trigger = yes
 						portrait_fp3_turkic_clothing_trigger = yes
 						has_character_flag = wears_valyrian_mask_01
@@ -1444,12 +1444,17 @@ disfigured_vd = {
 		}
 		trigger = {
 			trigger_if = {
-				limit = { exists = root }
-				AND = {
-					is_lotd_loaded_trigger = yes
-					any_equipped_character_artifact = {
-						artifact_slot_type = miscellaneous
-						has_variable = viserys_mask
+				limit = {
+					exists = root
+				}
+				root = {
+					has_character_modifier = masked_modifier
+					AND = {
+						is_lotd_loaded_trigger = yes
+						any_equipped_character_artifact = {
+							artifact_slot_type = miscellaneous
+							has_variable = viserys_mask
+						}
 					}
 				}
 			}
@@ -1525,14 +1530,19 @@ disfigured_vd = {
 		}
 		trigger = {
 			trigger_if = {
-				limit = { exists = root }
-				AND = {
-					has_character_flag = wears_valyrian_mask_01
-					is_lotd_loaded_trigger = yes
-					NOT = {
-						any_equipped_character_artifact = {
-							artifact_slot_type = miscellaneous
-							has_variable = viserys_mask
+				limit = {
+					exists = root
+				}
+				root = {
+					has_character_modifier = masked_modifier
+					AND = {
+						has_character_flag = wears_valyrian_mask_01
+						is_lotd_loaded_trigger = yes
+						NOT = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = miscellaneous
+								has_variable = viserys_mask
+							}
 						}
 					}
 				}
@@ -1577,13 +1587,20 @@ disfigured_vd = {
 		}
 		trigger = {
 			trigger_if = {
-				limit = { exists = root }
-				has_character_flag = wears_valyrian_mask_02
-				is_lotd_loaded_trigger = yes
-				NOT = {
-					any_equipped_character_artifact = {
-						artifact_slot_type = miscellaneous
-						has_variable = viserys_mask
+				limit = {
+					exists = root
+				}
+				root = {
+					has_character_modifier = masked_modifier
+					AND = {
+						has_character_flag = wears_valyrian_mask_02
+						is_lotd_loaded_trigger = yes
+						NOT = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = miscellaneous
+								has_variable = viserys_mask
+							}
+						}
 					}
 				}
 			}
@@ -1627,13 +1644,20 @@ disfigured_vd = {
 		}
 		trigger = {
 			trigger_if = {
-				limit = { exists = root }
-				has_character_flag = wears_valyrian_mask_03
-				is_lotd_loaded_trigger = yes
-				NOT = {
-					any_equipped_character_artifact = {
-						artifact_slot_type = miscellaneous
-						has_variable = viserys_mask
+				limit = {
+					exists = root
+				}
+				root = {
+					has_character_modifier = masked_modifier
+					AND = {
+						has_character_flag = wears_valyrian_mask_03
+						is_lotd_loaded_trigger = yes
+						NOT = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = miscellaneous
+								has_variable = viserys_mask
+							}
+						}
 					}
 				}
 			}
@@ -1677,13 +1701,20 @@ disfigured_vd = {
 		}
 		trigger = {
 			trigger_if = {
-				limit = { exists = root }
-				has_character_flag = wears_valyrian_mask_04
-				is_lotd_loaded_trigger = yes
-				NOT = {
-					any_equipped_character_artifact = {
-						artifact_slot_type = miscellaneous
-						has_variable = viserys_mask
+				limit = {
+					exists = root
+				}
+				root = {
+					has_character_modifier = masked_modifier
+					AND = {
+						has_character_flag = wears_valyrian_mask_04
+						is_lotd_loaded_trigger = yes
+						NOT = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = miscellaneous
+								has_variable = viserys_mask
+							}
+						}
 					}
 				}
 			}
@@ -1727,13 +1758,20 @@ disfigured_vd = {
 		}
 		trigger = {
 			trigger_if = {
-				limit = { exists = root }
-				has_character_flag = wears_valyrian_mask_05
-				is_lotd_loaded_trigger = yes
-				NOT = {
-					any_equipped_character_artifact = {
-						artifact_slot_type = miscellaneous
-						has_variable = viserys_mask
+				limit = {
+					exists = root
+				}
+				root = {
+					has_character_modifier = masked_modifier
+					AND = {
+						has_character_flag = wears_valyrian_mask_05
+						is_lotd_loaded_trigger = yes
+						NOT = {
+							any_equipped_character_artifact = {
+								artifact_slot_type = miscellaneous
+								has_variable = viserys_mask
+							}
+						}
 					}
 				}
 			}
