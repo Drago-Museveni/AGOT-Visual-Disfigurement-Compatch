@@ -2178,7 +2178,7 @@ blind = {
 			}
 		}
 	}
-	temporarily_one_eyed = {
+	temporarily_one_eyed = { #
 		base = one_eyed
 		trigger = {
 			exists = root
